@@ -10,22 +10,19 @@
 </head>
 <body>
   <header><h1>Scroll to top demo</h1></header>
-    <div id="random-txt">
-    </div>
-  <section>
 
-  </section> <!-- end of content -->
   
   <script src="build/build.js"></script>
-  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
   <script>
 
     require('top')();
-
+    var html = "";
+    var el = document.createElement('div');
     for (var i = 0; i < 100; i+=1 ) {
-      $('#random-txt').append('<p>Test</p>');
+      html += '<p>Test</p>'
     }
-
+    el.innerHTML = html;
+    document.body.appendChild(el);
   </script>
   </body>
 </html>

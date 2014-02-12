@@ -24,20 +24,20 @@ function top() {
   var $win = $(window);
 
   $el.click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 120);
+    $('html, body').animate({ scrollTop: 0 }, 120);
   });
 
   function onscroll() {
-  	var top = $doc.scrollTop();
-  	var height = $win.height();
+    var top = $doc.scrollTop();
+    var height = $win.height();
     (top > 0) ? $el.show() : $el.hide();
 
     //IE6 positioning
     if (!window.XMLHttpRequest) {
-      $el.css("top", top + height - 166);
+      $el.css('top', top + height - 166);
     }
   }
 
-  $win.on("scroll", onscroll);
+  $win.on('scroll', onscroll);
   $el.appendTo(document.body);
 }

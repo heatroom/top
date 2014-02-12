@@ -1,0 +1,36 @@
+.ui-scroll-top:hover {
+  background: #4F1D7D;
+}
+
+.ui-scroll-top {
+  font-size: 12px;
+  background: #61349F;
+  width: 36px;
+  height: 36px;
+  position: fixed;
+  bottom: 100px; 
+  right: 100px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 65535;
+}
+
+.ui-scroll-top-triangle {
+  height: 10px;
+  line-height: 20px;
+  font-size: 20px;
+  vertical-align: top;
+  color: #FFF;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.ui-scroll-top-rectangle {
+  width: 4px;
+  height: 12px;
+  line-height: 12px;
+  color: #FFF;
+  background: #FFF;
+  margin: 0 auto;
+}

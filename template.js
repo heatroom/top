@@ -1,0 +1,1 @@
+module.exports = '<div class="ui-scroll-top" id="back-to-top">\n  <div class="ui-scroll-top-triangle" style="">◆</div>\n  <div class="ui-scroll-top-rectangle"></div>\n</div>';

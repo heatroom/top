@@ -3,7 +3,7 @@
  */
 
 var $ = require('jquery')
-   , html = require('./template');
+  , html = require('./template');
 
 
 /**
@@ -20,14 +20,16 @@ module.exports = top;
 
 function top() {
   var $el = $(html);
+  var $doc = $(document);
+  var $win = $(window);
 
   $el.click(function () {
     $("html, body").animate({ scrollTop: 0 }, 120);
   });
 
   function onscroll() {
-  	var top = $(document).scrollTop();
-  	var height = $(window).height();
+  	var top = $doc.scrollTop();
+  	var height = $win.height();
     (top > 0) ? $el.show() : $el.hide();
 
     //IE6 positioning
@@ -36,6 +38,6 @@ function top() {
     }
   }
 
-  $(window).on("scroll", onscroll);
-  document.body.appendChild($el.get(0));
+  $win.on("scroll", onscroll);
+  $el.appendTo(document.body);
 }
